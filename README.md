@@ -16,7 +16,7 @@ Rust製のシンプルなポモドーロタイマーCLIツールです。
 ### Rustがインストールされている場合
 
 ```sh
-git clone https://github.com/your-username/pomodoro-cli.git
+git clone git@github.com:to-kamimura/pomodoro-cli.git
 cd pomodoro-cli
 cargo build --release
 ```
@@ -26,7 +26,7 @@ cargo build --release
 ## 📝 使い方
 
 ```sh
-pomodoro-cli --work 25 --break 5 --repeat 4
+./target/release/pomodoro-cli --work 25 --break 5 --repeat 4
 ```
 
 ### オプション一覧
@@ -41,7 +41,7 @@ pomodoro-cli --work 25 --break 5 --repeat 4
 
 ```
 🎯　ポモドーロ開始：「作業 25分 → 休憩 5分」 × 2セット
-🕒　全体：14:03 ～ 14:58
+🕒　全体：14:03 ～ 15:03
 
 ▶️　セット 1 開始（14:03 ～ 14:33）
     🛠　作業中: 00:25
@@ -54,8 +54,6 @@ pomodoro-cli --work 25 --break 5 --repeat 4
     🛠　作業中: ...
 ```
 
----
-
 ## 🔧 開発環境
 
 - Rust 1.70+
@@ -63,13 +61,9 @@ pomodoro-cli --work 25 --break 5 --repeat 4
 - `chrono` 0.4
 - `colored` 2.x
 
----
-
 ## 📜 ライセンス
 
 MIT License
-
----
 
 ## 🙏 貢献
 
